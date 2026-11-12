@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA — Technology Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-logo">NEXORA<span>.</span></div>
+</div>
+
+<header>
+    <a href="#" class="logo">NEXORA<span>.</span></a>
+
+    <nav id="nav">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#products">Mahsulotlar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <div class="header-actions">
+        <button id="themeBtn" class="icon-btn">☀</button>
+        <button id="favoriteBtn" class="icon-btn">♡</button>
+        <button id="cartBtn" class="cart-btn">🛒 <span id="cartCount">0</span></button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="tag">THE FUTURE IS HERE</div>
+        <h1>Technology that<br>moves <span>you forward.</span></h1>
+        <p>Kelajak texnologiyalarini bugun kashf eting. Eng zamonaviy qurilmalar — bir joyda.</p>
+        <div class="hero-buttons">
+            <a href="#products" class="primary-btn">Xarid qilish ↗</a>
+            <a href="#about" class="secondary-btn">Batafsil</a>
+        </div>
+        <div class="hero-stats">
+            <div><strong>250+</strong><small>Mahsulotlar</small></div>
+            <div><strong>15K+</strong><small>Mijozlar</small></div>
+            <div><strong>4.9/5</strong><small>Reyting</small></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="glow"></div>
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900" alt="Premium headphones">
+        <div class="floating-card">
+            <span>NEW COLLECTION</span>
+            <h3>Audio Pro X</h3>
+            <strong>$249.00</strong>
+        </div>
+    </div>
+</section>
+
+<section class="brands">
+    <span>APPLE</span>
+    <span>SONY</span>
+    <span>SAMSUNG</span>
+    <span>BOSE</span>
+    <span>JBL</span>
+</section>
+
+<section class="products section" id="products">
+    <div class="section-heading">
+        <div>
+            <div class="tag">OUR COLLECTION</div>
+            <h2>Discover <span>Products.</span></h2>
+        </div>
+        <p>Har bir detalda sifat, har bir qurilmada innovatsiya.</p>
+    </div>
+
+    <div class="product-tools">
+        <input type="text" id="searchInput" placeholder="Mahsulot qidirish...">
+        <div class="filters">
+            <button class="filter active" data-category="all">Barchasi</button>
+            <button class="filter" data-category="audio">Audio</button>
+            <button class="filter" data-category="phone">Telefon</button>
+            <button class="filter" data-category="watch">Smart Watch</button>
+        </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+        <article class="product-card" data-category="audio" data-name="Headphones Pro">
+            <button class="heart">♡</button>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Headphones">
+            </div>
+            <div class="product-info">
+                <small>PREMIUM AUDIO</small>
+                <h3>Headphones Pro</h3>
+                <div class="rating">★★★★★ <span>(128)</span></div>
+                <div class="product-bottom">
+                    <strong>$249</strong>
+                    <button class="add-btn" data-name="Headphones Pro" data-price="249">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="phone" data-name="Modern Smartphone">
+            <button class="heart">♡</button>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Smartphone">
+            </div>
+            <div class="product-info">
+                <small>SMARTPHONE</small>
+                <h3>Modern Smartphone</h3>
+                <div class="rating">★★★★★ <span>(96)</span></div>
+                <div class="product-bottom">
+                    <strong>$899</strong>
+                    <button class="add-btn" data-name="Modern Smartphone" data-price="899">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="watch" data-name="Smart Watch Ultra">
+            <button class="heart">♡</button>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Smart Watch">
+            </div>
+            <div class="product-info">
+                <small>WEARABLE TECH</small>
+                <h3>Smart Watch Ultra</h3>
+                <div class="rating">★★★★★ <span>(214)</span></div>
+                <div class="product-bottom">
+                    <strong>$329</strong>
+                    <button class="add-btn" data-name="Smart Watch Ultra" data-price="329">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="audio" data-name="Wireless Speaker">
+            <button class="heart">♡</button>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600" alt="Speaker">
+            </div>
+            <div class="product-info">
+                <small>PURE SOUND</small>
+                <h3>Wireless Speaker</h3>
+                <div class="rating">★★★★★ <span>(85)</span></div>
+                <div class="product-bottom">
+                    <strong>$159</strong>
+                    <button class="add-btn" data-name="Wireless Speaker" data-price="159">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="phone" data-name="Premium Phone">
+            <button class="heart">♡</button>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=600" alt="Phone">
+            </div>
+            <div class="product-info">
+                <small>NEW GENERATION</small>
+                <h3>Premium Phone</h3>
+                <div class="rating">★★★★★ <span>(142)</span></div>
+                <div class="product-bottom">
+                    <strong>$749</strong>
+                    <button class="add-btn" data-name="Premium Phone" data-price="749">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="watch" data-name="Classic Smart Watch">
+            <button class="heart">♡</button>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=600" alt="Watch">
+            </div>
+            <div class="product-info">
+                <small>SMART LIFESTYLE</small>
+                <h3>Classic Smart Watch</h3>
+                <div class="rating">★★★★★ <span>(73)</span></div>
+                <div class="product-bottom">
+                    <strong>$199</strong>
+                    <button class="add-btn" data-name="Classic Smart Watch" data-price="199">+</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <p class="empty" id="empty">Mahsulot topilmadi.</p>
+</section>
+
+<section class="banner" id="about">
+    <div>
+        <div class="tag">LIMITED OFFER</div>
+        <h2>Upgrade your<br><span>digital lifestyle.</span></h2>
+        <p>Yangi kolleksiyadagi mahsulotlarga maxsus chegirmalar.</p>
+        <a href="#products" class="primary-btn">Ko‘rish ↗</a>
+    </div>
+    <div class="banner-circle">-20%</div>
+</section>
+
+<section class="features">
+    <div class="feature"><span>🚚</span><h3>Tez yetkazib berish</h3><p>Buyurtmangizni tez va qulay yetkazamiz.</p></div>
+    <div class="feature"><span>🛡️</span><h3>Kafolat</h3><p>Mahsulotlar uchun kafolat mavjud.</p></div>
+    <div class="feature"><span>💎</span><h3>Premium sifat</h3><p>Faqat sifatli texnologiyalar.</p></div>
+    <div class="feature"><span>🎧</span><h3>Qo‘llab-quvvatlash</h3><p>Savollaringizga yordam beramiz.</p></div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="tag">GET IN TOUCH</div>
+    <h2>Let's talk <span>technology.</span></h2>
+    <p>Savollaringiz bo‘lsa, biz bilan bog‘laning.</p>
+    <a href="mailto:hello@nexora.uz" class="primary-btn">Bizga yozing ↗</a>
+</section>
+
+<footer>
+    <a href="#" class="logo">NEXORA<span>.</span></a>
+    <p>© 2026 NEXORA. All rights reserved.</p>
+    <a href="#home">Yuqoriga ↑</a>
+</footer>
+
+<div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <h2>Savatcha</h2>
+        <button id="closeCart">✕</button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-total">
+        <strong>Jami:</strong>
+        <strong id="total">$0</strong>
+    </div>
+    <button class="primary-btn checkout" id="checkout">Buyurtma berish</button>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="modal" id="orderModal">
+    <button class="modal-close" id="closeModal">✕</button>
+    <h2>Buyurtma berish</h2>
+    <p>Ma'lumotlaringizni kiriting.</p>
+    <form id="orderForm">
+        <input type="text" id="customerName" placeholder="Ismingiz" required>
+        <input type="tel" id="customerPhone" placeholder="Telefon raqamingiz" required>
+        <button class="primary-btn" type="submit">Tasdiqlash</button>
+    </form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
